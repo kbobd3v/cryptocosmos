@@ -18,22 +18,20 @@ const App = () => {
               <Route path="/" element={ <Homepage />} /> 
               <Route path="/exchanges" element={<Exchanges />} />
               <Route path="/cryptocurrencies" element={<Cryptocurrencies />} />
-              <Route path="/crypto/:coinid" element={<CryptoDetails />} />
+              <Route path="/crypto/:coinId" element={<CryptoDetails />} />
               <Route path="/news" element={<News />} />
             </Routes>
           </div>
         </Layout>
       <div className='footer'>
         <Typography.Title level={5} style={{color: "white", textAlign: "center"}}>
-          CryptoCosmos <br/>
-          All rights reserved
+          Cryptoland  - Powered by Draco Global<br/>
+          Todos los derechos Reservados
         </Typography.Title>
         <Space>
-        <Routes>
-              {/* <Route path="/" element={ <Homepage />} />  */}
-              <Route path="/exchanges" element={<Exchanges />} />
-              <Route path="/news" element={<News />} />
-            </Routes>
+          <Link to="/">Inicio</Link>
+          <Link to="/exchanges">Exchanges</Link>
+          <Link to="/news">Noticias</Link>
         </Space>
       </div>
     </div>

@@ -15,22 +15,22 @@ const Homepage = () => {
   if (isFetching) return "Loading..."
   return (
       <>
-        <title level={2} className="heading">Global Crypto Stats</title>
+        <title level={2} className="heading">Estadisticas totales - Cryptomonedas</title>
         <Row>
-            <Col span={12}><Statistic title="Total Cryptos" value={globalStats.total} /></Col>
-            <Col span={12}><Statistic title="Total Exchanges" value={millify(globalStats.totalExchanges)} /></Col>
-            <Col span={12}><Statistic title="Total Market Cap" value={millify(globalStats.totalMarketCap)} /></Col>
-            <Col span={12}><Statistic title="Total 24h Volume" value={millify(globalStats.total24hVolume)}  /></Col>
-            <Col span={12}><Statistic title="Total Markets" value={millify(globalStats.totalMarkets)} /></Col>
+            <Col span={12}><Statistic title="Total de Cryptos" value={globalStats.total} /></Col>
+            <Col span={12}><Statistic title="Total de Exchanges" value={millify(globalStats.totalExchanges)} /></Col>
+            <Col span={12}><Statistic title="Capital de Mercado total" value={millify(globalStats.totalMarketCap)} /></Col>
+            <Col span={12}><Statistic title="Volumen total para 24h" value={millify(globalStats.total24hVolume)}  /></Col>
+            <Col span={12}><Statistic title="Total Mercados" value={millify(globalStats.totalMarkets)} /></Col>
         </Row>
         <div className='home-heading-container'>
-          <Title level={2} className="home-title">Top 10 Cryptocurrencies in the world</Title>
-          <Title level={3} className="show-more"><Link to="/cryptocurrencies">Show more</Link></Title>
+          <Title level={2} className="home-title">Top 10 Cryptomonedas a nivel mundial</Title>
+          <Title level={3} className="show-more"><Link to="/cryptocurrencies">Ver mas</Link></Title>
         </div>
         <Cryptocurrencies simplified />
         <div className='home-heading-container'>
-          <Title level={2} className="home-title">Latest Crypto News</Title>
-          <Title level={3} className="show-more"><Link to="/news">Show more</Link></Title>
+          <Title level={2} className="home-title">Ultimas Noticias Crypto</Title>
+          <Title level={3} className="show-more"><Link to="/news">Ver mas</Link></Title>
         </div>
         <News simplified />
       </>
